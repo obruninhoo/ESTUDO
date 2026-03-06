@@ -1,8 +1,10 @@
 1. No Início do Estudo (Sempre primeiro passo)
 Antes de tocar em qualquer código, você precisa garantir que tem a versão mais recente que editou no outro dispositivo.
+
 No PC (VS Code):
 Abra o terminal (Ctrl + ') e digite: git pull origin main.
 Ou use a interface: Clique nas setas circulares na barra de status (canto inferior esquerdo) ou no botão "Sincronizar Alterações".
+
 No Celular (Plowgit):
 Abra o repositório e use a função Pull para baixar as alterações feitas no PC. 
 
@@ -10,6 +12,7 @@ Abra o repositório e use a função Pull para baixar as alterações feitas no 
 2. Durante a Edição
 Edite seus arquivos normalmente no VS Code ou no Carnets/Jupyter.
 Dica de Ouro: Não edite o mesmo arquivo nos dois dispositivos ao mesmo tempo. Isso causa "conflitos de merge", que são chatos de resolver para quem está começando.
+
 3. Ao Finalizar o Estudo (Sempre último passo)
 Você precisa "salvar" e "enviar" o que fez para a nuvem (GitHub). 
 No PC (VS Code)
@@ -17,22 +20,16 @@ Stage: No terminal, digite git add . (para preparar todos os arquivos).
 Commit: Digite git commit -m "Explique o que você fez hoje" (isso cria um ponto de restauração local).
 Push: Digite git push origin main (isso envia para o GitHub).
 Pela interface: Clique no + ao lado dos arquivos, digite a mensagem no campo de texto, clique em Commit e depois em Sincronizar/Push. 
-YouTube
-YouTube
- +4
+
 No Celular (Plowgit)
 Add/Stage: Selecione os arquivos modificados.
 Commit: Adicione uma mensagem descrevendo a alteração.
 Push: Envie para o repositório remoto. 
-YouTube
-YouTube
- +3
+
 Resumo da "Regra de Ouro" para evitar erros:
 Chegou? Dá um PULL.
 Terminou? Dá um COMMIT e um PUSH. 
-Stack Overflow
-Stack Overflow
- +3
+
 Sobre o erro "Could not resolve host": Como vimos antes, isso é falta de internet ou DNS. Se acontecer no celular, verifique se o Wi-Fi/Dados estão ativos antes de tentar o Push/Pull.
 
 
