@@ -1,123 +1,38 @@
-#TUTORIAL PARA GIT NO PC E CELULAR
+1. No Início do Estudo (Sempre primeiro passo)
+Antes de tocar em qualquer código, você precisa garantir que tem a versão mais recente que editou no outro dispositivo.
+No PC (VS Code):
+Abra o terminal (Ctrl + ') e digite: git pull origin main.
+Ou use a interface: Clique nas setas circulares na barra de status (canto inferior esquerdo) ou no botão "Sincronizar Alterações".
+No Celular (Plowgit):
+Abra o repositório e use a função Pull para baixar as alterações feitas no PC. 
 
-"""
-Perfeito! Vou criar um guia rápido de consulta com os comandos essenciais do Git, tanto para PC (VS Code/terminal) quanto para celular (PlomGit). Assim você tem tudo num lugar só!
-
-📚 GUIA RÁPIDO DE COMANDOS GIT
-
----
-
-🖥️ NO PC (VS Code / Terminal)
-
-Comandos básicos do dia a dia
-
-Ação Comando no Terminal VS Code (interface)
-Ver o que mudou git status Ícone de controle de código (3º ícone esquerda)
-Preparar arquivos git add . (todos) ou git add arquivo.py Clique no + ao lado dos arquivos
-Commit (salvar local) git commit -m "mensagem clara" Escreva mensagem e clique no ✓
-Puxar do GitHub git pull origin main Ícone de seta circular para baixo
-Enviar pro GitHub git push origin main Três pontinhos → Push
-Ver histórico git log --oneline Aba "Commits" no menu esquerdo
-
-Sequência padrão (toda vez que for programar)
-
-bash
-# 1. Começar o dia (sempre!)
-git pull origin main
-
-# 2. Programar, editar arquivos...
-
-# 3. No final do dia (ou quando terminar)
-git status              # vê o que mudou
-git add .               # prepara tudo
-git commit -m "o que fiz hoje"  # commita local
-git push origin main    # envia pro GitHub
-
-
----
-
-📱 NO CELULAR (PlomGit)
-
-Comandos básicos
-
-Ação Como fazer no PlomGit
-Puxar do GitHub (Pull) Abra o repo → ícone de seta para BAIXO
-Ver o que mudou Os arquivos alterados aparecem em vermelho/verde
-Commit local Escreva mensagem no campo e confirme
-Enviar pro GitHub (Push) Após commit, ícone de seta para CIMA
-Ver histórico Toque no ícone de "relógio" ou "commits"
-Compartilhar p/ Carnets Toque no arquivo → Share → Copiar para Carnets
-
-Sequência padrão no celular
+ 
+2. Durante a Edição
+Edite seus arquivos normalmente no VS Code ou no Carnets/Jupyter.
+Dica de Ouro: Não edite o mesmo arquivo nos dois dispositivos ao mesmo tempo. Isso causa "conflitos de merge", que são chatos de resolver para quem está começando.
+3. Ao Finalizar o Estudo (Sempre último passo)
+Você precisa "salvar" e "enviar" o que fez para a nuvem (GitHub). 
+No PC (VS Code)
+Stage: No terminal, digite git add . (para preparar todos os arquivos).
+Commit: Digite git commit -m "Explique o que você fez hoje" (isso cria um ponto de restauração local).
+Push: Digite git push origin main (isso envia para o GitHub).
+Pela interface: Clique no + ao lado dos arquivos, digite a mensagem no campo de texto, clique em Commit e depois em Sincronizar/Push. 
+YouTube
+YouTube
+ +4
+No Celular (Plowgit)
+Add/Stage: Selecione os arquivos modificados.
+Commit: Adicione uma mensagem descrevendo a alteração.
+Push: Envie para o repositório remoto. 
+YouTube
+YouTube
+ +3
+Resumo da "Regra de Ouro" para evitar erros:
+Chegou? Dá um PULL.
+Terminou? Dá um COMMIT e um PUSH. 
+Stack Overflow
+Stack Overflow
+ +3
+Sobre o erro "Could not resolve host": Como vimos antes, isso é falta de internet ou DNS. Se acontecer no celular, verifique se o Wi-Fi/Dados estão ativos antes de tentar o Push/Pull.
 
 
-1. Pull (seta p/ baixo) - baixa versão mais recente
-2. Compartilhar arquivo com Carnets
-3. Editar no Carnets e salvar
-4. Compartilhar de volta e substituir no PlomGit
-5. Commit + Push (seta p/ cima)
-
-
----
-
-⚠️ ERROS COMUNS E SOLUÇÕES
-
-Problema Solução
-git pull dá erro "você tem alterações locais" git stash (guarda temporariamente) ou commit local primeiro
-Push negado (alguém alterou antes) git pull primeiro, resolva conflitos, depois push
-Esqueceu de adicionar um arquivo git add arquivo e git commit --amend (corrige último commit)
-Mensagem de commit errada git commit --amend -m "mensagem correta"
-Quer desfazer alterações git restore arquivo (antes do add) ou git reset (depois do add)
-
----
-
-🎯 REGRAS DE OURO (DECORE ISSO!)
-
-1. SEMPRE faça PULL antes de começar a trabalhar (em qualquer dispositivo)
-2. Mensagens de commit claras: "Adiciona função de cálculo", "Corrige erro no gráfico", etc.
-3. Commits pequenos e frequentes > commit gigante no final do dia
-4. Verifique sempre com git status antes de commit/push
-
----
-
-📝 FLUXO IDEAL PARA VOCÊ
-
-De manhã (no PC)
-
-bash
-git pull origin main
-# programar...
-
-
-No celular (se editar)
-
-
-Pull → Editar (Carnets) → Commit → Push
-
-
-De noite (no PC)
-
-bash
-git pull origin main  # pega o que fez no celular
-# se programou no PC também: add → commit → push
-
-
----
-
-🚨 CASO DE EMERGÊNCIA
-
-Se algo der muito errado e você só quiser voltar à versão do GitHub:
-
-bash
-git fetch --all
-git reset --hard origin/main
-
-
-(Isso APAGA tudo que você fez localmente e pega exatamente o que está no GitHub!)
-
----
-
-Dica final: Nos primeiros dias, continue usando git status antes de cada comando - ele é seu melhor amigo e mostra exatamente o que está acontecendo!
-
-Salva esse guia num bloco de notas no celular e no PC. Em 1 semana você já vai fazer tudo automático! 💪
-"""
