@@ -31,5 +31,3 @@ Chegou? Dá um PULL.
 Terminou? Dá um COMMIT e um PUSH. 
 
 Sobre o erro "Could not resolve host": Como vimos antes, isso é falta de internet ou DNS. Se acontecer no celular, verifique se o Wi-Fi/Dados estão ativos antes de tentar o Push/Pull.
-
-
